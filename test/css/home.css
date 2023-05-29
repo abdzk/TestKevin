@@ -1,0 +1,548 @@
+
+@media all and  (min-width: 1025px)and (max-width:2561px ){
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Century Gothic","Tahoma", sans-serif;
+        background-color: rgba(226,232,234,0.85);
+    }
+
+    /* Sidenav menu */
+    .sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -250px;
+        background-color: #131213;
+        padding-top: 60px;
+        transition: left 0.5s ease;
+    }
+
+    /* Sidenav menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 0px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+        text-align: center;
+    }
+
+    .sidenav a:hover {
+        color: #6a6f72;
+    }
+
+    .sidenav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Active class */
+    .sidenav.active {
+        left: 0;
+    }
+
+    /* Close btn */
+    .sidenav .close {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 18px;
+    }
+
+    /* Icône burger */
+    .burger-icon span {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: #9cbece;
+        margin: 6px 0;
+        transition: background-color 0.3s ease;
+    }
+    .burger-icon {
+        display: block;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+    }
+
+
+    .burger-icon.black span {
+        background-color: black;
+    }
+    #openBtn {
+        position: fixed;
+    }
+    /*header*/
+    header {
+        text-align: center;
+    }
+
+    /*logo Jurion Kevin*/
+    .img-logo {
+        width: 10%;
+        height: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    /*banner*/
+    .banner {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: auto;
+
+    }
+
+    .img-bdx {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    /*text*/
+    .text {
+
+        padding-left: 170px;
+        padding-right: 170px;
+        font-size: 15px;
+        color: #6a6f72;
+        text-align: justify;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 5px 5px 14px #b7b3b3;
+        height: 100%;
+
+    }
+
+    /*Image included in the card*/
+    .card img {
+        width: 13%;
+        object-fit: cover;
+        height: 100%;
+        border-radius: 10px;
+        border: #6a6f72 solid 0.5px;
+        float: left;
+        margin-right: 20px;
+
+    }
+
+    /* paragraph*/
+    .text p {
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        flex: 1;
+    }
+
+    /*address*/
+    .adresse {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 40px;
+
+    }
+
+    .adresse p {
+        margin: 30px 20px 50px;
+
+    }
+
+    .adresse a {
+        text-decoration: none;
+        color: black;
+        box-shadow: 5px 5px 14px #b7b3b3;
+        border-radius: 4px;
+        padding: 10px;
+
+    }
+
+    .adresse a:hover {
+        color: white;
+        background-color: black;
+    }
+
+    /*footer*/
+    footer {
+        margin-top: -20px;
+        text-align: center;
+        font-size: 15px;
+        height: 40px;
+        line-height: 40px; /* centrage vertical */
+        border-top: black solid 1px;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+}
+@media all and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Century Gothic","Tahoma", sans-serif;
+        background-color: rgba(226,232,234,0.85);
+    }
+    /* Sidenav menu */
+    .sidenav {
+        height: 100%;
+        width: 100px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -250px;
+        background-color: #131213;
+        padding-top: 60px;
+        transition: left 0.5s ease;
+    }
+
+    /* Sidenav menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 0px;
+        text-decoration: none;
+        font-size: 10px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+        text-align: center;
+    }
+
+    .sidenav a:hover {
+        color: #6a6f72;
+    }
+
+    .sidenav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Active class */
+    .sidenav.active {
+        left: 0;
+    }
+
+    /* Close btn */
+    .sidenav .close {
+        position: absolute;
+        top: 0;
+        right: 24px;
+        font-size: 10px;
+    }
+
+    /* Icône burger */
+    .burger-icon span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #101010;
+        margin: 6px 0;
+    }
+
+    #openBtn {
+        position: fixed;}
+
+    /*header*/
+    header {
+        text-align: center;
+    }
+    /*banner*/
+    .banner {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: auto;
+
+    }
+
+    .img-bdx {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    /*logo Jurion Kevin*/
+    .img-logo {
+        width: 20%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .text {
+        padding-left: 26px;
+        padding-right: 26px;
+        color: #6a6f72;
+        font-size: 12px;
+    }
+
+    .card{
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 5px 5px 14px #b7b3b3;
+        height: 100%;
+        text-align: center;
+
+    }
+    /*Image included in the text*/
+    .card img
+    {
+        border-radius: 10px;
+        border: #b7b3b3 solid 0.5px;
+        margin: 0 auto;
+        width: 38%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+
+    /* paragraph*/
+    .text p {
+        text-align: justify;
+
+    }
+
+    /*address*/
+    .adresse {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 20px;
+
+    }
+
+    .adresse p {
+        margin: 16px 26px 14px;
+        font-size: 10px;
+    }
+
+    .adresse a {
+        text-decoration: none;
+        color: black;
+
+        border-radius: 4px;
+        margin-bottom: -20px;
+        padding: 5px;
+        font-size: 10px;
+        box-shadow: 5px 5px 14px #b7b3b3;
+
+    }
+
+    .adresse a:hover {
+        color: white;
+        background-color: black;
+    }
+
+    /*footer*/
+    footer a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+    footer {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 10px;
+        line-height: 40px; /* centrage vertical */
+        border-top: black solid 1px;
+    }
+
+
+
+
+
+}
+@media all and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Century Gothic","Tahoma", sans-serif;
+        background-color: rgba(226,232,234,0.85);
+    }
+    /* Sidenav menu */
+    .sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -250px;
+        background-color: #131213;
+        padding-top: 60px;
+        transition: left 0.5s ease;
+    }
+
+    /* Sidenav menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 0px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+        text-align: center;
+    }
+
+    .sidenav a:hover {
+        color: #6a6f72;
+    }
+
+    .sidenav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Active class */
+    .sidenav.active {
+        left: 0;
+    }
+
+    /* Close btn */
+    .sidenav .close {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 18px;
+    }
+
+    /* Icône burger */
+    .burger-icon span {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: #9cbece;
+        margin: 6px 0;
+        transition: background-color 0.3s ease;
+    }
+    .burger-icon {
+        display: block;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+    }
+
+
+    .burger-icon.black span {
+        background-color: black;
+    }
+    #openBtn {
+        position: fixed;
+    }
+    /*header*/
+    header {
+        text-align: center;
+    }
+
+    .img-bdx {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+    /*logo Jurion Kevin*/
+    .img-logo {
+        width: 12%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: 15px;
+        color: #6a6f72;
+    }
+
+
+    .card {
+
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 5px 5px 14px #b7b3b3;
+        height: 100%;
+
+    }
+
+    /*Image included in the card*/
+    .card img {
+        width: 19%;
+        object-fit: cover;
+        height: 100%;
+        border-radius: 10px;
+        border: #6a6f72 solid 0.5px;
+        float: left;
+        margin-right: 10px;
+        margin-top: 15px;
+    }
+
+
+    /* paragraph*/
+    .text p {
+        text-align: justify;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    /*address*/
+    .adresse {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 40px;
+
+    }
+
+    .adresse p {
+        margin: 30px 20px 50px;
+
+    }
+
+    .adresse a {
+        text-decoration: none;
+        color: black;
+        box-shadow: 5px 5px 14px #b7b3b3;
+        border-radius: 4px;
+        margin-bottom: -20px;
+        padding: 10px;
+
+    }
+
+    .adresse a:hover {
+        color: white;
+        background-color: black;
+    }
+
+    /*footer*/
+    footer {
+        margin-top: -20px;
+        text-align: center;
+        font-size: 15px;
+        height: 40px;
+        line-height: 40px; /* centrage vertical */
+        border-top: black solid 1px;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: black;
+    }
+
+}

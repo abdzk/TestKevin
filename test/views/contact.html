@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/contact.css" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/footer.js"></script>
+    <title>Contact</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('Z04ZmRiZr1Ftn7RMt');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+
+<body>
+<div id="mySidenav" class="sidenav">
+    <a id="closeBtn" href="#" class="close">×</a>
+    <ul>
+        <li><a href="home.html">Accueil</a></li>
+        <li><a href="lawyer.html">Votre avocat</a></li>
+        <li><a href="skills.html">Compétences</a></li>
+        <li><a href="fees.html">Honoraires</a></li>
+    </ul>
+</div>
+
+<a href="#" id="openBtn">
+  <span class="burger-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+</a>
+<header>
+    <a href="home.html">
+        <img class="img-logo" src="../img/logo_kj_avocat.webp" >
+    </a>
+</header>
+<div class="text">
+<p>Afin de prendre attache avec le cabinet de Maître Kévin JURION, vous pouvez utiliser le formulaire de contact ci-dessous
+ afin d'obtenir un devis gratuit ou des conseils juridiques.
+</p>
+</div>
+<div class="form">
+    <form id="contact-form">
+        <fieldset>
+            <legend>Vos coordonées:</legend>
+        <input type="hidden" name="contact_number">
+        <label>Votre nom</label>
+        <input type="text" name="user_name">
+            <label>Votre prénom</label>
+            <input type="text" name="first_name">
+            <label>Votre numéro de téléphone</label>
+            <input type="number" name="number_phone">
+        <label>Votre email</label>
+        <input type="email" name="user_email">
+        <label>Message</label>
+        <textarea name="message" placeholder="Exposé de votre problématique"></textarea>
+        <input type="submit" value="Envoyer">
+        </fieldset>
+    </form>
+</div>
+<footer>
+    <div id="footer"></div>
+</footer>
+<script src="../js/test.js"></script>
+</body>
+</html>

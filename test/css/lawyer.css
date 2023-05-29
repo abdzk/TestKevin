@@ -1,0 +1,598 @@
+@media all and  (min-width: 1025px) and (max-width:2560px ){
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Century Gothic", "Tahoma", sans-serif;
+        font-size: 15px;
+        background-color: rgba(226, 232, 234, 0.85);
+    }
+
+    /* Sidenav menu */
+    .sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -250px;
+        background-color: #131213;
+        padding-top: 60px;
+        transition: left 0.5s ease;
+    }
+
+    /* Sidenav menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 0px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+        text-align: center;
+    }
+
+    .sidenav a:hover {
+        color: #6a6f72;
+    }
+
+    .sidenav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Active class */
+    .sidenav.active {
+        left: 0;
+    }
+
+    /* Close btn */
+    .sidenav .close {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 18px;
+    }
+
+    /* Icône burger */
+    .burger-icon span {
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #101010;
+        margin: 6px 0;
+    }
+
+    #openBtn {
+        position: fixed;
+    }
+
+    /*header*/
+    header {
+        text-align: center;
+    }
+
+    /*logo*/
+    .img-logo {
+        width: 10%;
+        height: 100%;
+        margin-top: 10px;
+    }
+
+    /*banner*/
+    .img-bdx {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .banner {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: auto;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: "Myriad", sans-serif;
+        font-size: 32px;
+    }
+
+    h2 {
+        color: #101010;
+        text-align: center;
+    }
+
+
+    /*text*/
+    .text {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        margin-left: 170px;
+        margin-right: 170px;
+        color: #6a6f72;
+        font-size: 15px;
+    }
+
+
+
+    /*card*/
+    .card {
+
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 40px;
+        box-shadow: 5px 5px 14px #b7b3b3;
+    }
+
+    .card .strong{
+        text-align: center;
+    }
+    .card_1 {
+        box-shadow: 5px 5px 14px #b7b3b3;
+        border-radius: 10px;
+        padding: 20px;
+
+    }
+
+    /*Image included in the card*/
+    .card img {
+        position: relative;
+        width: 30%;
+        height: 100%;
+        float: left;
+        border-radius: 10px;
+        margin-right: 20px;
+        object-fit: cover;
+    }
+
+    .card_1 img {
+        position: relative;
+        float: right;
+        width: 27%;
+        height: 100%;
+        border-radius: 10px;
+        margin-left: 20px;
+        object-fit: cover;
+
+    }
+
+    /* paragraph*/
+    .text p {
+        text-align: justify;
+    }
+
+    /*contact box*/
+    #contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 17vh;
+    }
+    .contact {
+        display: flex;
+        text-decoration: none;
+        box-shadow: 5px 5px 14px #b7b3b3;
+        border-radius: 4px;
+        padding: 10px;
+        font-size: 15px;
+
+
+    }
+
+    .contact:hover{
+        color: white;
+        background-color: black;
+    }
+
+    /*footer*/
+    footer {
+
+        text-align: center;
+        font-size: 15px;
+        height: 40px;
+        line-height: 40px; /* centrage vertical */
+        border-top: black solid 1px;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+    @media all and (max-width: 600px) {
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Century Gothic", "Tahoma", sans-serif;
+            font-size: 15px;
+            background-color: rgba(226, 232, 234, 0.85);
+        }
+
+        /* Sidenav menu */
+        .sidenav {
+            height: 100%;
+            width: 100px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: -250px;
+            background-color: #131213;
+            padding-top: 60px;
+            transition: left 0.5s ease;
+        }
+
+        /* Sidenav menu links */
+        .sidenav a {
+            padding: 8px 8px 8px 0px;
+            text-decoration: none;
+            font-size: 10px;
+            color: #ffffff;
+            display: block;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .sidenav a:hover {
+            color: #6a6f72;
+        }
+
+        .sidenav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Active class */
+        .sidenav.active {
+            left: 0;
+        }
+
+        /* Close btn */
+        .sidenav .close {
+            position: absolute;
+            top: 0;
+            right: 24px;
+            font-size: 10px;
+        }
+
+        /* Icône burger */
+        .burger-icon span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #101010;
+            margin: 6px 0;
+        }
+
+        #openBtn {
+            position: fixed;}
+
+        /*header*/
+        header {
+            text-align: center;
+        }
+
+        /*banner*/
+        .banner {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: auto;
+
+        }
+
+        .img-bdx {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+
+        /*logo Jurion Kevin*/
+        .img-logo {
+            width: 20%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            object-fit: cover;
+            height: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: "Myriad", sans-serif;
+            font-size: 24px;
+        }
+
+        h2 {
+            color: #101010;
+            text-align: center;
+        }
+
+        /*text*/
+        .text {
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            margin-left: 26px;
+            margin-right: 26px;
+            color: #6a6f72;
+            font-size: 12px;
+        }
+
+        /*card*/
+        .card {
+
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-shadow: 5px 5px 14px #b7b3b3;
+            height: 100%;
+            text-align: center;
+        }
+
+
+        .card_1 {
+            box-shadow: 5px 5px 14px #b7b3b3;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            height: 100%;
+
+        }
+
+        /*Image included in the card*/
+        .card img {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .card_1 img {
+            position: relative;
+            width: 60%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+
+        }
+
+        .text p{
+            text-align: justify;
+        }
+
+        /*contact box*/
+        #contact{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+        }
+        .contact {
+            display: flex;
+            text-decoration: none;
+            box-shadow: 5px 5px 14px #b7b3b3;
+            border-radius: 4px;
+            padding: 10px;
+            font-size: 10px;
+
+        }
+
+        .contact:hover{
+            color: white;
+            background-color: black;
+        }
+
+
+        footer {
+            text-align: center;
+            font-size: 10px;
+            line-height: 40px; /* centrage vertical */
+            border-top: black solid 1px;
+        }
+        footer a {
+            text-decoration: none;
+            color: #101010;
+        }
+    }
+
+@media all and (min-width: 601px) and (max-width: 1024px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Century Gothic","Tahoma", sans-serif;
+        background-color: rgba(226,232,234,0.85);
+    }
+    /* Sidenav menu */
+    .sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -250px;
+        background-color: #131213;
+        padding-top: 60px;
+        transition: left 0.5s ease;
+    }
+
+    /* Sidenav menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 0px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+        text-align: center;
+    }
+
+    .sidenav a:hover {
+        color: #6a6f72;
+    }
+
+    .sidenav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Active class */
+    .sidenav.active {
+        left: 0;
+    }
+
+    /* Close btn */
+    .sidenav .close {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 18px;
+    }
+
+    /* Icône burger */
+    .burger-icon span {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: #9cbece;
+        margin: 6px 0;
+        transition: background-color 0.3s ease;
+    }
+    .burger-icon {
+        display: block;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+    }
+
+
+    .burger-icon.black span {
+        background-color: black;
+    }
+    #openBtn {
+        position: fixed;
+    }
+    /*header*/
+    header {
+        text-align: center;
+    }
+
+    .img-bdx {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+    /*logo Jurion Kevin*/
+    .img-logo {
+        width: 12%;
+        margin-top: 5px;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: "Myriad", sans-serif;
+    }
+
+    h2 {
+        color: #101010;
+        text-align: center;
+    }
+
+    /*text*/
+    .text {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        margin-left: 100px;
+        margin-right: 100px;
+        color: #6a6f72;
+        font-size: 15px;
+    }
+
+    .card .strong{
+        text-align: center;
+    }
+    /*card*/
+    .card {
+
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 5px 5px 14px #b7b3b3;
+        height: 100%;
+        text-align: center;
+    }
+
+
+    .card_1 {
+        box-shadow: 5px 5px 14px #b7b3b3;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        height: 100%;
+
+    }
+
+    /*Image included in the card*/
+    .card img {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .card_1 img {
+        position: relative;
+        width: 60%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+
+    }
+
+    .text p{
+        text-align: justify;
+    }
+    /*contact box*/
+    #contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+    }
+    .contact {
+        display: flex;
+        text-decoration: none;
+        box-shadow: 5px 5px 14px #b7b3b3;
+        border-radius: 4px;
+        padding: 10px;
+        font-size: 10px;
+
+    }
+
+    .contact:hover{
+        color: white;
+        background-color: black;
+    }
+
+
+    footer {
+        text-align: center;
+        font-size: 12px;
+        line-height: 40px; /* centrage vertical */
+        border-top: black solid 1px;
+    }
+    footer a {
+        text-decoration: none;
+        color: #101010;
+    }
+
+
+}
